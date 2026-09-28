@@ -1,5 +1,5 @@
 class Usuario:
-    def __init__(self, id, nombre, usuario, contrasena, rol):
+    def __init__(self, id, nombre, usuario, rol, contrasena=""):
         self.id = int(id)
         self.nombre = nombre.strip()
         self.usuario = usuario.strip()
@@ -11,7 +11,6 @@ class Usuario:
             "id": self.id,
             "nombre": self.nombre,
             "usuario": self.usuario,
-            "contrasena": self.contrasena,
             "rol": self.rol,
         }
 
