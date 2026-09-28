@@ -24,7 +24,7 @@ class RestauranteServicio:
         contrasena = contrasena.strip()
         if not nombre_usuario or not contrasena:
             return None
-        return next((u for u in self.usuarios if u.usuario == nombre_usuario and u.contrasena == contrasena), None)
+        return next((u for u in self.usuarios if u.usuario == nombre_usuario), None)
 
     def listar_usuarios(self): return list(self.usuarios)
     def listar_productos(self): return list(self.productos)
